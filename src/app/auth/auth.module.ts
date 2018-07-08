@@ -4,6 +4,8 @@ import { RegistrationComponent } from './registration/registration.component';
 import {AuthComponent} from './auth.component';
 import {CommonModule} from '@angular/common';
 import {AuthRoutingModule} from './auth-routing.module';
+import {MatCardModule, MatInputModule} from '@angular/material';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,10 @@ import {AuthRoutingModule} from './auth-routing.module';
   ],
   imports: [
     AuthRoutingModule,
-    CommonModule
+    CommonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 
