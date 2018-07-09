@@ -6,6 +6,8 @@ import {CommonModule} from '@angular/common';
 import {AuthRoutingModule} from './auth-routing.module';
 import {MatCardModule, MatInputModule} from '@angular/material';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     CommonModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 
