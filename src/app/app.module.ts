@@ -7,6 +7,10 @@ import {AuthModule} from './auth/auth.module';
 import {RouterModule} from '@angular/router';
 import {MatToolbarModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
+import {UsersService} from './common/users.service';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
 @NgModule({
@@ -20,8 +24,10 @@ import { HeaderComponent } from './header/header.component';
     BrowserAnimationsModule,
     AuthModule,
     MatToolbarModule,
+    AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),
+    AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
