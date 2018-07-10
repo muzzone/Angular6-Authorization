@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {AuthService} from '../../common/auth.service';
 
 @Component({
   selector: 'app-registration',
@@ -10,7 +11,7 @@ export class RegistrationComponent implements OnInit {
 
   registrationFrom: FormGroup;
 
-  constructor() { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
     this.registrationFrom = new FormGroup({
@@ -21,7 +22,8 @@ export class RegistrationComponent implements OnInit {
   }
 
   submitForm() {
-    console.log(this.registrationFrom.value)
+    console.log(this.registrationFrom.value);
+    this.authService.signUp(this.registrationFrom.value.email, this.registrationFrom.value.pwd);
   }
 
   checkForLength(control: FormControl) {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {UsersService} from '../../common/users.service';
+import {AuthService} from '../../common/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
 
-  constructor(private userService: UsersService) { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
     this.loginForm = new FormGroup({
@@ -22,17 +22,7 @@ export class LoginComponent implements OnInit {
 
   submitForm() {
     const formData = this.loginForm.value;
-    const user = this.userService.getUserByEmail(formData.email);
-    if (user) {
-      console.log(user.email);
-      if (user.password === formData.pwd) {
-        console.log(user)
-      } else {
-        console.log('pwd err')
-      }
-    } else {
-      console.log('email err')
-    }
+    this.authService.logIn(formData.email, formData.pwd)
   }
 
   checkForLength(control: FormControl) {
