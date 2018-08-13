@@ -12,7 +12,7 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
-import {AuthService} from './common/auth.service';
+import {FirebaseAuthService} from './common/firebase-auth.service';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import {AuthService} from './common/auth.service';
     AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),
     AngularFireDatabaseModule
   ],
-  providers: [UsersService, AngularFireAuth, AuthService],
+  providers: [UsersService, AngularFireAuth, FirebaseAuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

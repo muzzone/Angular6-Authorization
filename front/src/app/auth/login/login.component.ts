@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {AuthService} from '../../common/auth.service';
+import {FirebaseAuthService} from '../../common/firebase-auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
 
   loginForm: FormGroup;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: FirebaseAuthService) { }
 
   ngOnInit() {
     this.loginForm = new FormGroup({

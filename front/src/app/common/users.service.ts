@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {AngularFireDatabase} from 'angularfire2/database';
 import {ReplaySubject} from 'rxjs';
-import {AuthService} from './auth.service';
+import {FirebaseAuthService} from './firebase-auth.service';
 
 
 @Injectable()
@@ -12,7 +12,7 @@ export class UsersService {
 
   constructor (
     private db: AngularFireDatabase,
-    private authService: AuthService
+    private authService: FirebaseAuthService
   ) {
     this.authStatus$.next(this.authService.isSignIn());
     db.list('/users').valueChanges().subscribe((data: any) => {

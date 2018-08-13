@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from '../common/auth.service';
+import {FirebaseAuthService} from '../common/firebase-auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,7 @@ import {AuthService} from '../common/auth.service';
 export class HeaderComponent implements OnInit {
   isSignIn: boolean;
 
-  constructor(public authService: AuthService) { }
+  constructor(public authService: FirebaseAuthService) { }
 
   ngOnInit() {
   this.authService.authStatus().subscribe((bool: boolean) => {

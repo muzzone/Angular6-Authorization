@@ -4,13 +4,10 @@ import {AngularFireAuth} from 'angularfire2/auth';
 import {ReplaySubject} from 'rxjs';
 
 @Injectable()
-export class AuthService {
+export class FirebaseAuthService {
   authStatus$ = new ReplaySubject(1);
 
-  constructor (
-    private http: HttpClient,
-    private au: AngularFireAuth,
-  ) {
+  constructor (private http: HttpClient, private au: AngularFireAuth) {
     this.authStatus$.next(this.isSignIn());
   }
 
