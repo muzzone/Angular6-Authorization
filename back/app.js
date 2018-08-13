@@ -4,11 +4,15 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const authRouter = require('./routes/auth');
 const usersRouter = require('./routes/users');
 
 const app = express();
+mongoose.connect('mongodb://localhost/my-app')
+  .then(() => {console.log('MongoDB connected')})
+  .catch((err) => {console.log(err)});
 
 app.use(logger('dev'));
 app.use(express.json());
