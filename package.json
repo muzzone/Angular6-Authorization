@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "start": "node ./index",
-    "dev": "nodemon index"
+    "nodemon": "nodemon index",
+    "client-install": "npm i --prefix client",
+    "client": "npm run start --prefix client",
+    "dev" : "concurrently \"npm run nodemon\" \"npm run client\""
   },
   "dependencies": {
     "body-parser": "^1.18.3",
