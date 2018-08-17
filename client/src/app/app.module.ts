@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { AuthService } from './core/auth.service';
 import { RouterModule } from '@angular/router';
 import {MatButtonModule, MatToolbarModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
@@ -30,7 +31,7 @@ import {FirebaseAuthService} from './common/firebase-auth.service';
     AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),
     AngularFireDatabaseModule
   ],
-  providers: [UsersService, AngularFireAuth, FirebaseAuthService],
+  providers: [UsersService, AngularFireAuth, FirebaseAuthService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

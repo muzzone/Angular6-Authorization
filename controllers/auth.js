@@ -9,7 +9,7 @@ module.exports.login = async function (req, res) {
     if (candidate.pass.toString() === req.body.pass.toString()) {
       const token = jwt.sign({
         email: candidate.email,
-        login: candidate.login,
+        name: candidate.name,
         userId: candidate._id
       }, keys.jwt, {expiresIn: 60 * 60});
       res.send({token: `Bearer ${token}`});
@@ -29,11 +29,12 @@ module.exports.login = async function (req, res) {
 // post
 // body: {
 // 	"email": 1,
-// 	"login": 2,
+// 	"name": 2,
 // 	"pass": 3
 // }
 module.exports.register = async function (req, res) {
   const candidate = await User.findOne({email: req.body.email});
+  console.log('requset body', req.body);
 
   if (candidate) {
     res.status(409).json({
@@ -42,13 +43,12 @@ module.exports.register = async function (req, res) {
   } else {
     const user = new User({
       email: req.body.email,
-      login : req.body.login,
+      name : req.body.name,
       pass : req.body.pass
     });
     try {
-      await user.save()
-        .then(() => res.send(req.body))
-        .catch(e => res.send('err'));
+      const savedUser = await user.save();
+      res.status(200).json(savedUser);
     } catch (e) {console.log('create user err', e)}
   }
 };

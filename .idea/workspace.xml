@@ -3,75 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="04d49817-1fef-495d-8748-e84646dd05af" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/bin/www" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/config/keys.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/controllers/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/controllers/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/middleware/passport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/models/Users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/public/stylesheets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/routes/auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/routes/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/views/error.jade" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/views/index.jade" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/views/layout.jade" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/e2e/tsconfig.e2e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/auth-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/auth.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/auth.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/auth.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/auth.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/login/login.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/login/login.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/registration/registration.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/registration/registration.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/registration/registration.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/auth/registration/registration.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/common/firebase-auth.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/common/models/user.model.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/common/users.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/header/header.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/header/header.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/header/header.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/app/header/header.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/auth/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/auth/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/auth/registration/registration.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/auth/registration/registration.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/auth/registration/registration.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/auth/registration/registration.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/passport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Users.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -86,11 +25,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="auth.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/core/auth.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <caret line="13" column="70" lean-forward="true" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/auth/registration/registration.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/auth/registration/registration.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/auth/login/login.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/auth/login/login.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/common/users.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firebase-auth.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/app/common/firebase-auth.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +126,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>use</find>
+      <find>login</find>
+      <find>pwd</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,6 +147,17 @@
         <option value="$PROJECT_DIR$/back/routes/users.js" />
         <option value="$PROJECT_DIR$/back/middleware/passport.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/models/Users.js" />
+        <option value="$PROJECT_DIR$/middleware/passport.js" />
+        <option value="$PROJECT_DIR$/client/src/app/common/auth.service.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/auth/registration/registration.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/auth/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/client/src/app/auth/login/login.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/auth/registration/registration.component.html" />
+        <option value="$PROJECT_DIR$/client/src/app/core/auth.service.ts" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/controllers/auth.js" />
       </list>
     </option>
   </component>
@@ -140,8 +179,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="550" />
-    <option name="width" value="954" />
-    <option name="height" value="1053" />
+    <option name="width" value="944" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -156,6 +195,11 @@
               <item name="Angular6-authentication-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Angular6-authentication-" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Angular6-authentication-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Angular6-authentication-" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -167,10 +211,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/front/node_modules/tslint" />
+    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/client/node_modules/tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/front/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/client/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/app/core" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,7 +247,7 @@
       <workItem from="1534225674963" duration="16000" />
       <workItem from="1534425780988" duration="2864000" />
       <workItem from="1534428658900" duration="3066000" />
-      <workItem from="1534503145361" duration="6602000" />
+      <workItem from="1534503145361" duration="12955000" />
     </task>
     <task id="LOCAL-00001" summary="add node express server">
       <created>1534166923896</created>
@@ -218,12 +267,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22607000" />
+    <option name="totallyTimeSpent" value="28960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32930845" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -231,10 +281,9 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.48056155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.42810097" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3402854" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32930845" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -484,8 +533,123 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/users.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/common/models/user.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/common/firebase-auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/auth/registration/registration.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/auth/registration/registration.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/auth/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/auth/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/common/users.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app/core/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <caret line="13" column="70" lean-forward="true" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
         </state>
       </provider>
     </entry>
