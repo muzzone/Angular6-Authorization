@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.send('main route');
 });
 
-router.all('/login', auth.login);
+router.post('/login', auth.login);
 router.post('/register', auth.register);
 
 module.exports = router;

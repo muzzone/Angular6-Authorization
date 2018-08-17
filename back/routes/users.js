@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const users = require('../controllers/users');
+const passport = require('passport');
 
-router.get('/', users.users);
+router.get('/', passport.authenticate('jwt', { session: false}), users.users);
 
 router.get('/user', users.getById);
 

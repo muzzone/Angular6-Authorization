@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const passport = require('passport');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -12,7 +13,10 @@ const usersRouter = require('./routes/users');
 const app = express();
 mongoose.connect('mongodb://localhost/my-app')
   .then(() => {console.log('MongoDB connected')})
-  .catch((err) => {console.log(err)});
+  .catch(err => console.log(err));
+
+app.use(passport.initialize());
+require('./middleware/passport')(passport);
 
 app.use(logger('dev'));
 app.use(express.json());
