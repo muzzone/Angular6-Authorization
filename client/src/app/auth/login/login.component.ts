@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit {
   }
 
   submitForm() {
-    this.authService.logIn(this.loginForm.value).subscribe(res => console.log(res))
+    this.authService.logIn(this.loginForm.value)
+      // .subscribe(res => console.log(res))
   }
 
   checkForLength(control: FormControl) {

@@ -12,7 +12,10 @@ module.exports.login = async function (req, res) {
         name: candidate.name,
         userId: candidate._id
       }, keys.jwt, {expiresIn: 60 * 60});
-      res.send({token: `Bearer ${token}`});
+      res.send({
+        user: candidate,
+        token: `Bearer ${token}`
+      });
     } else {
       res.status(401).json({
         message: 'wrong password'
@@ -34,7 +37,7 @@ module.exports.login = async function (req, res) {
 // }
 module.exports.register = async function (req, res) {
   const candidate = await User.findOne({email: req.body.email});
-  console.log('requset body', req.body);
+  console.log('request body', req.body);
 
   if (candidate) {
     res.status(409).json({
@@ -46,9 +49,19 @@ module.exports.register = async function (req, res) {
       name : req.body.name,
       pass : req.body.pass
     });
-    try {
-      const savedUser = await user.save();
-      res.status(200).json(savedUser);
-    } catch (e) {console.log('create user err', e)}
+    user.save()
+      .then((savedUser) => {
+        const token = jwt.sign(
+          {
+            email: savedUser.email,
+            name: savedUser.name,
+            userId: savedUser._id
+          },
+          keys.jwt, {expiresIn: 60 * 60}
+        );
+        console.log('saved user', savedUser);
+        res.status(200).json({user: savedUser, token});
+      })
+      .catch(e => {console.log('create user err', e)});
   }
 };

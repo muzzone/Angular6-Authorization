@@ -24,7 +24,8 @@ export class RegistrationComponent implements OnInit {
 
   submitForm() {
     console.log(this.registrationFrom.value);
-    this.authService.signUp(this.registrationFrom.value).subscribe(res => console.log(res));
+    this.authService.signUp(this.registrationFrom.value)
+      // .subscribe(res => console.log(res));
   }
 
   checkForLength(control: FormControl) {
