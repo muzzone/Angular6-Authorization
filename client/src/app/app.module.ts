@@ -14,6 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import {FirebaseAuthService} from './common/firebase-auth.service';
+import {SystemModule} from './system/system.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {FirebaseAuthService} from './common/firebase-auth.service';
     BrowserModule,
     BrowserAnimationsModule,
     AuthModule,
+    SystemModule,
     MatToolbarModule,
     MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),

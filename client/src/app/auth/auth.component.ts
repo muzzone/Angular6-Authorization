@@ -3,7 +3,13 @@ import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-auth',
-  templateUrl: './auth.component.html',
+  template: '' +
+  '<div class="authCard">\n' +
+  '  auth component\n' +
+  '  <mat-card>\n' +
+  '    <router-outlet></router-outlet>\n' +
+  '  </mat-card>\n' +
+  '</div>',
   styleUrls: ['./auth.component.scss']
 })
 
@@ -11,7 +17,7 @@ export class AuthComponent implements  OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.navigate(['/login']);
+    // this.router.navigate(['/login']);
   }
 
 }

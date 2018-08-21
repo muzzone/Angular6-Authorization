@@ -4,31 +4,34 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AuthService {
-  private user = new ReplaySubject(1);
+  private activeUser = new ReplaySubject(1);
   constructor(private http: HttpClient) {
-    const sevedUser = localStorage.getItem('user');
-    this.user.next(sevedUser || null);
+    const savedUser = localStorage.getItem('user');
+    this.activeUser.next(savedUser || null);
   }
 
   signUp(data) {
-    return this.http.post('http://localhost:8080/api/register', data)
-      .subscribe((res) => {console.log(res)})
-  }
-
-  logIn(data) {
-    return this.http.post('http://localhost:8080/api/login', data)
+    return this.http.post('/api/register', data)
       .subscribe((res: any) => {
-        this.saveActiveUser(res.user, res.token);
+        this.setActiveUser(res.user, res.token);
       })
   }
 
-  saveActiveUser(user, token) {
+  logIn(data) {
+    return this.http.post('/api/login', data)
+      .subscribe((res: any) => {
+        this.setActiveUser(res.user, res.token);
+      })
+  }
+
+  setActiveUser(user, token) {
     const userData = JSON.stringify({user, token});
     localStorage.setItem('user', userData);
+    this.activeUser.next(userData);
   }
 
   logOut() {
     localStorage.removeItem('user');
-    this.user.next(null);
+    this.activeUser.next(null);
   }
 }
