@@ -18,7 +18,7 @@
         </mat-error>
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Password" formControlName="pass">
+        <input matInput placeholder="Password" type="password" formControlName="pass">
         <mat-error>
           Please enter your password. At least 4 characters
         </mat-error>
@@ -26,7 +26,7 @@
     </div>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button color="primary" [routerLink]="'/login'" type="button">Login</button>
+    <button mat-raised-button color="primary" [routerLink]="'/auth/login'" type="button">Login</button>
     <button mat-raised-button color="accent" type="submit">Submit</button>
   </mat-card-actions>
 </form>

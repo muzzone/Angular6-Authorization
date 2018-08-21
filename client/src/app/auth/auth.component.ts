@@ -5,7 +5,6 @@ import {Router} from '@angular/router';
   selector: 'app-auth',
   template: '' +
   '<div class="authCard">\n' +
-  '  auth component\n' +
   '  <mat-card>\n' +
   '    <router-outlet></router-outlet>\n' +
   '  </mat-card>\n' +
@@ -17,7 +16,7 @@ export class AuthComponent implements  OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    // this.router.navigate(['/login']);
+    this.router.navigate(['auth/login']);
   }
 
 }

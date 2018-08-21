@@ -15,6 +15,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
 import {FirebaseAuthService} from './common/firebase-auth.service';
 import {SystemModule} from './system/system.module';
+import {AuthGuard} from './core/auth.guard';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import {SystemModule} from './system/system.module';
     AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),
     AngularFireDatabaseModule
   ],
-  providers: [UsersService, AngularFireAuth, FirebaseAuthService, AuthService],
+  providers: [UsersService, AngularFireAuth, FirebaseAuthService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
