@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span routerLink="/">Custom Toolbar</span>
+    <span class="headerTitle" [routerLink]="'/'">Custom Toolbar</span>
     <!--<i class="material-icons">accessible</i>-->
     <button *ngIf="isSignIn" (click)="this.authService.logOut()" mat-button >Logout</button>
     <button *ngIf="!isSignIn" routerLink="/auth/login" mat-button >Login</button>

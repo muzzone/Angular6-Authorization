@@ -1,14 +1,20 @@
-module.exports.users = function (req, res) {
-  res.send('users')
+const User = require('../models/Users');
+
+// GET http://localhost:8080/api/users
+module.exports.users = async function (req, res) {
+  const users = await User.find({}, {_id: 1, email: 1, name: 1});
+  res.send(users);
 };
 
-// http://localhost:8080/api/users/user?id=1
-module.exports.getById = function (req, res) {
-  res.send('get user by id = ' + req.query.id);
+// GET http://localhost:8080/api/users/user?id=1
+module.exports.getById = async function (req, res) {
+  const user = await User.findOne({_id: req.query.id}, {_id: 1, email: 1, name: 1});
+  res.send(user);
 };
 
 
-// localhost:8080/api/users/delete/12
-module.exports.delete = function (req, res) {
-  res.send('delete user by id = ' + req.params.id);
+// DELETE http://localhost:8080/api/users/delete/12
+module.exports.delete = async function (req, res) {
+  const response = await User.deleteOne({_id: req.params.id});
+  res.send(response);
 };

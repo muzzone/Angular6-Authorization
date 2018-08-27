@@ -1,3 +1,6 @@
 .mat-toolbar-row {
   justify-content: space-between;
 }
+.headerTitle {
+  cursor: pointer;
+}

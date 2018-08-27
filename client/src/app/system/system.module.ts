@@ -8,7 +8,7 @@ import {SystemComponent} from './system.component';
   declarations: [
     SystemComponent,
     UsersComponent
-  ]
+  ],
 })
 
 export class SystemModule {}
