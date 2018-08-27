@@ -1,20 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {AuthService} from '../core/auth.service';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-system',
   template: '' +
-  '<div>system component</div>' +
-  // '<h3 *ngIf="!user">You must be logged in</h3>' +
+  '<h2>Main Page</h2>' +
+  '<button routerLink="/users">Users</button>' +
   '<router-outlet></router-outlet>',
 })
 
-export class SystemComponent implements OnInit {
-  private user;
-  constructor(private authService: AuthService) {
-    authService.activeUser.subscribe((_user => {this.user = _user}));
-  }
-  ngOnInit() {
-    console.log('system component work')
-  }
-}
+export class SystemComponent {}

@@ -8,7 +8,6 @@ import { AuthService } from './core/auth.service';
 import { RouterModule } from '@angular/router';
 import {MatButtonModule, MatToolbarModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
-import { UsersService } from './common/users.service';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -16,6 +15,7 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import {FirebaseAuthService} from './common/firebase-auth.service';
 import {SystemModule} from './system/system.module';
 import {AuthGuard} from './core/auth.guard';
+import {UsersService} from './core/users.service';
 
 
 @NgModule({
@@ -34,7 +34,7 @@ import {AuthGuard} from './core/auth.guard';
     AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),
     AngularFireDatabaseModule
   ],
-  providers: [UsersService, AngularFireAuth, FirebaseAuthService, AuthService, AuthGuard],
+  providers: [AngularFireAuth, FirebaseAuthService, AuthService, AuthGuard, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
