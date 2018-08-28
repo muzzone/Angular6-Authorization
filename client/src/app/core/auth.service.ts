@@ -6,7 +6,7 @@ import {Router} from '@angular/router';
 
 @Injectable()
 export class AuthService {
-  public activeUser = new ReplaySubject(1);
+  private activeUser = new ReplaySubject(1);
   constructor(private http: HttpClient, private router: Router) {
     const savedUser = localStorage.getItem('user');
     savedUser ? this.activeUser.next(JSON.parse(savedUser)) : this.activeUser.next(null);
@@ -36,6 +36,10 @@ export class AuthService {
     const userData = {user, token};
     localStorage.setItem('user', JSON.stringify(userData));
     this.activeUser.next(userData);
+  }
+
+  getActiveUser() {
+    return this.activeUser;
   }
 
   logOut() {

@@ -16,6 +16,8 @@ import {FirebaseAuthService} from './common/firebase-auth.service';
 import {SystemModule} from './system/system.module';
 import {AuthGuard} from './core/auth.guard';
 import {UsersService} from './core/users.service';
+import {HTTP_INTERCEPTORS} from '@angular/common/http';
+import {TokenInterceptor} from './common/classes/token.interceptor';
 
 
 @NgModule({
@@ -34,7 +36,18 @@ import {UsersService} from './core/users.service';
     AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),
     AngularFireDatabaseModule
   ],
-  providers: [AngularFireAuth, FirebaseAuthService, AuthService, AuthGuard, UsersService],
+  providers: [
+    AngularFireAuth,
+    FirebaseAuthService,
+    AuthService,
+    AuthGuard,
+    UsersService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      multi: true,
+      useClass: TokenInterceptor
+    }
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -6,7 +6,7 @@ import {AuthService} from './auth.service';
 export class UsersService {
   currentUser;
   constructor(private http: HttpClient, private authService: AuthService) {
-    this.authService.activeUser.subscribe(user => this.currentUser = user)
+    this.authService.getActiveUser().subscribe(user => this.currentUser = user)
   };
 
   headers() {

@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   constructor(public authService: AuthService) { }
 
   ngOnInit() {
-    this.authService.activeUser.subscribe(user => {
+    this.authService.getActiveUser().subscribe(user => {
       this.isSignIn = !!user
     })
   }
