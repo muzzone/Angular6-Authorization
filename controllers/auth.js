@@ -61,10 +61,10 @@ module.exports.register = async function (req, res) {
             name: savedUser.name,
             userId: savedUser._id
           },
-          keys.jwt, {expiresIn: 60 * 60 * 60}
+          keys.jwt, {expiresIn: 60 * 60}
         );
         console.log('saved user', savedUser);
-        res.status(200).json({user: savedUser, token});
+        res.status(200).json({user: savedUser, token: `Bearer ${token}`});
       })
       .catch(e => {console.log('create user err', e)});
   }
