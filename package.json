@@ -7,9 +7,10 @@
     "nodemon": "nodemon index",
     "client-install": "npm i --prefix client",
     "client": "npm run start --prefix client",
-    "dev" : "concurrently \"npm run nodemon\" \"npm run client\""
+    "dev": "concurrently \"npm run nodemon\" \"npm run client\""
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",

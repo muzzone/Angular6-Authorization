@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
 const User = require('../models/Users');
 const keys = require('../config/keys');
 
@@ -6,12 +7,13 @@ module.exports.login = async function (req, res) {
   const candidate = await User.findOne({email: req.body.email});
 
   if (candidate) {
-    if (candidate.pass.toString() === req.body.pass.toString()) {
+    const passwordResult = bcrypt.compareSync(req.body.pass.toString(), candidate.pass.toString());
+    if (passwordResult) {
       const token = jwt.sign({
         email: candidate.email,
         name: candidate.name,
         userId: candidate._id
-      }, keys.jwt, {expiresIn: 60 * 60 * 60});
+      }, keys.jwt, {expiresIn: 60 * 60});
       res.send({
         user: candidate,
         token: `Bearer ${token}`
@@ -44,10 +46,12 @@ module.exports.register = async function (req, res) {
       message: 'Email already used'
     })
   } else {
+    const salt = bcrypt.genSaltSync(10);
+    const pass = req.body.pass;
     const user = new User({
       email: req.body.email,
       name : req.body.name,
-      pass : req.body.pass
+      pass : bcrypt.hashSync(pass, salt)
     });
     user.save()
       .then((savedUser) => {

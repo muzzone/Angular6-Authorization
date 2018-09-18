@@ -1,11 +1,14 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-system',
-  template: '' +
-  '<h2>Main Page</h2>' +
-  '<button routerLink="/users">Users</button>' +
-  '<router-outlet></router-outlet>',
+  templateUrl: './system.component.html'
 })
 
-export class SystemComponent {}
+export class SystemComponent {
+  router;
+  constructor(private _router: Router) {
+    this.router = _router;
+  }
+}

@@ -2,6 +2,12 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {UsersService} from '../../core/users.service';
 import {Subscription} from 'rxjs';
 
+interface User {
+  email: string;
+  name: string;
+  id: number;
+}
+
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -9,6 +15,7 @@ import {Subscription} from 'rxjs';
 })
 export class UsersComponent implements OnInit, OnDestroy {
   users = [];
+  displayedColumns: string[] = ['index', 'email', 'name', 'id'];
   aSub: Subscription;
   constructor(private userService: UsersService) { }
 
