@@ -9,7 +9,6 @@ module.exports.users = async function (req, res) {
     console.log('get users error', e);
     res.send(null)
   }
-
 };
 
 // GET http://localhost:8080/api/users/user?id=1

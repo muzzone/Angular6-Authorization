@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { AuthService } from './core/auth.service';
 import { RouterModule } from '@angular/router';
-import {MatButtonModule, MatToolbarModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatToolbarModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
@@ -34,7 +34,8 @@ import {TokenInterceptor} from './common/classes/token.interceptor';
     MatToolbarModule,
     MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase, 'ng-6-test'),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    MatCardModule
   ],
   providers: [
     AngularFireAuth,
