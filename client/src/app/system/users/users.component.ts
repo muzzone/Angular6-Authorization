@@ -14,7 +14,7 @@ interface User {
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit, OnDestroy {
-  users = [];
+  users: User[] = [];
   displayedColumns: string[] = ['index', 'email', 'name', 'id'];
   aSub: Subscription;
   constructor(private userService: UsersService) { }
